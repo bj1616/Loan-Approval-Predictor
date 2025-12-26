@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
 
-with open('model\model.pkl','rb') as f:
+with open('model/model.pkl','rb') as f:
     model = pickle.load(f)
 
 labels = model.classes_.tolist()
